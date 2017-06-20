@@ -1,0 +1,89 @@
+.about {
+    .container {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    height: 100%;
+    &-text {
+        max-width: 34%;
+        .title {
+            font-size: 3.625em;
+            margin-bottom: 60px;
+            text-align: left;
+            &:after,
+            &:before {
+                display: none;
+            }
+        }
+        .about-description {
+            margin-bottom: 65px;
+            position: relative;
+            &:before {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 36px;
+                height: 1px;
+                background: #484848;
+                top: 11px;
+                left: -50px;
+            }
+            p {
+                letter-spacing: 0.075em;
+                line-height: 24px;
+                margin-bottom: 10px;
+                &:last-child {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+        button {
+            width: 200px;
+            box-sizing: border-box;
+            height: 48px;
+            border: 2px solid $black;
+            border-radius: 25px;
+            font-size: 0.938em;
+            color: $black;
+            text-transform: uppercase;
+            position: relative;
+            outline: none;
+            background: $white;
+            &:after {
+                z-index: -1;
+                content: "";
+                display: block;
+                height: 24px;
+                width: 100%;
+                position: absolute;
+                left: 0;
+                bottom: -7px;
+                border-bottom: 2px solid $black;
+                border-bottom-left-radius: 25px;
+                border-bottom-right-radius: 25px;
+                transition: 0.3s ease;
+            }
+            &:hover {
+                font-size: 1em;
+                transition: 0.3s ease;
+            }
+        }
+    }
+    &-image {
+        position: relative;
+        max-height: 550px;
+        max-width: 46%;
+        img {
+            width: 100%;
+        }
+        &-absolute {
+            position: absolute;
+            max-width: 358px;
+            top: -120px;
+            left: -133px;
+            max-width: 60%;
+        }
+    }
+}

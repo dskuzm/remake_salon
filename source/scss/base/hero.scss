@@ -1,0 +1,30 @@
+.hero {
+    height: 100%;
+    background: url(../img/girl-face.png) right top no-repeat;
+    background-size: contain;
+    .container {
+        padding-top: 200px;
+    }
+    &-item {
+        max-width: 555px;
+        position: relative;
+        a {
+            position: absolute;
+            content: "";
+            display: block;
+            width: 29px;
+            height: 42px;
+            left: 40%;
+            margin-left: -14px;
+            bottom: -135px;
+            background: url(../img/arrow.png)center no-repeat
+        }
+    }
+    &-text {
+        line-height: 24px;
+        letter-spacing: 0.075em;
+        p {
+            margin-bottom: 10px;
+        }
+    }
+}

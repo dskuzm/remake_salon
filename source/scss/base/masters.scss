@@ -1,0 +1,81 @@
+.masters {
+    margin-bottom: 145px;
+    .container {
+        max-width: 1300px;
+    }
+    .title {
+        margin-bottom: 72px;
+    }
+    &-items {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-family: 'FuturaBookC';
+        .item {
+            position: relative;
+            max-width: 301px;
+            max-height: 421px;
+            overflow: hidden;
+            margin-bottom: 68px;
+            &-info {
+                position: absolute;
+                bottom: 49px;
+                right: 0;
+                text-align: center;
+                overflow: hidden;
+                line-height: 36px;
+                .name {
+                    text-decoration: none;
+                    display: block;
+                    color: $white;
+                    background: $black;
+                    width: 212px;
+                    height: 36px;
+                    transition: 0.3s ease;
+                    span {
+                        text-transform: uppercase;
+                    }
+                    &:hover {
+                        transition: 0.3s ease;
+                        font-size: 1.067em;
+                    }
+                }
+                .profession {
+                    color: $black;
+                    background: $white;
+                    width: 174px;
+                    height: 36px;
+                    float: right;
+                }
+            }
+        }
+    }
+    .see-more {
+        position: relative;
+        display: block;
+        float: right;
+        width: 175px;
+        text-decoration: none;
+        font-family: 'FuturaBookC';
+        text-transform: uppercase;
+        color: #000000;
+        transition: 0.3s ease;
+        &:after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 11px;
+            height: 17px;
+            right: 0;
+            top: 50%;
+            background: url(../img/arrow.png) center no-repeat;
+            background-size: cover;
+            margin-top: -8px;
+            transform: rotate(-90deg);
+        }
+        &:hover {
+            color: #828282;
+            transition: 0.3s ease;
+        }
+    }
+}

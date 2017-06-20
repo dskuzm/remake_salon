@@ -1,0 +1,36 @@
+.reviews {
+    margin-bottom: 165px;
+    .title {
+        margin-bottom: 65px;
+    }
+    .slider-item {
+        position: relative;
+        outline: none;
+        min-height: 250px;
+        box-sizing: border-box;
+        line-height: 21px;
+        &-coment {
+            font-size: 0.875em;
+            letter-spacing: 0.075em;
+            max-width: 400px;
+        }
+        .coment-info {
+            text-align: center;
+            letter-spacing: 0.100em;
+            p:first-child {
+                font-size: 1.071em;
+            }
+        }
+        &:before {
+            position: absolute;
+            top: 4px;
+            left: 14px;
+            display: block;
+            width: 50px;
+            height: 37px;
+            content: '';
+            background: url(../img/quotes.png) center no-repeat;
+            z-index: -1;
+        }
+    }
+}
